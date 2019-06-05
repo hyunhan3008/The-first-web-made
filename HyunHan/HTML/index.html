@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lnag="en">
+
+<!--This is code is made by Hyun HAN-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name ="author" content="Hyun HAN">
+	<title>PuzzleDrizzle</title>
+	<link rel="stylesheet" href="../CSS/puzzledrizzle.css">
+</head>
+
+<body>
+	<!--This part displays the contents before the main contents of the webpage-->
+	<div id="upper">
+	<figure>
+		<!--To resize the image easily, figure element is used jsut for this image-->
+		<!-- The initial value of the image is not set for flexible image, and relative url has been used-->
+		<img src="../images/logo.png" alt="a logo">
+	</figure>
+	<header>
+		<h1>PuzZle driZzle</h1>
+		<!--This is for actually toggle button which is showed in phone version-->
+		<p><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></p>
+	</header>
+	<nav>
+	 <div id="mySidenav" class="sidenav">
+		<ul>
+		  <!--Close button is not included in <li> in order that it can be applied different rule with the other <li>s.
+		      When the size of the webpage is being increased, the navigation bar should be displayed but close button is no more required-->
+		  <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+		  <li><a href="../HTML/index.html">Home</a></li>
+		  <li><a href="../HTML/aboutus.html">About</a></li>
+		  <li><a href="../HTML/news.html">News</a></li>
+		  <!--The reason I displayed different word with html name is just because "reviews" has more shorter characters-->
+		  <li><a href="../HTML/recommendation.html">Reviews</a></li>
+		  <li><a href="../HTML/puzzleGames.html">Puzzle</a></li>
+		  <li><a href="../HTML/contact.html">Contact</a></li>
+		  <li><a href="../HTML/accessibility.html">Accessibility</a></li>
+		</ul>
+	 </div> <!--This is for id="mySidenav"-->
+	</nav>
+	<!--This javascript is jsut for toggle menu, so I attached this after navigation part-->
+	<script src="../javascript/navScript.js"></script>
+	</div> <!--This is for id="upper"-->
+	
+	<main id = "home">
+	<!--In order to apply different css rules for each title, I used different numbers for each <h> elements-->
+	<h2>★ WELCOME ★</h2>
+	<h3>WHY? Puzzle Gmaes??</h3>
+	<article>
+		<p><img src="../images/stimulation.png" alt="a stiumulation"></p>
+		<!--I have used h1 as well in here, but I applied the different css rule by specifying the locatin like #home h1-->
+		<h1>First Reason</h1>
+		<p>
+		Diverse colorful images stiumulates kid's sense orgnas. There are many reports and evidence already indiciating how much the stimulation to the sensory orgnas
+		is important to growth of kdis. Many reports has shown that kids with diverse and different sensory stimulation performs well than others who have less experience
+		of the stimulation.Our game puzzle is consist of diverse colorful pretty images and these will surely be helpful for your kid's greatful development and improvement
+		for the future.
+		</p>
+	</article>
+	<article>
+		<p><img src="../images/logical.png" alt="a logical">	
+		<h1>Second Reason</h1>		
+		The puzzle games will help kids to think more in a logical way. However, solving a puzzle game is like climbing a mountaint. You need to go step by step.
+		Kids will try to solve the puzzle game and in this step they will naturally analyse what they needs to go to the next steps. Analysing skills to go to the next steps is 
+		essential part of the logical thinking. Our puzzle games will help your kids think more reasonably and logically.
+		</p>
+	</article>
+	<article>
+		<p><img src="../images/concentration.png" alt="a concentration">
+		<h1>Third Reason</h1>
+		The ability of concentration will be improved. Most of kids will feel boring with simple studying. Our game puzzles will trigger kid's intersts naturally, so
+		they will concnetrate on puzzle game. By doing so, they will improve thier ability to concentrate on something. At the basic step, there will be no chnages to kids.
+	    However, kids will learn how to concentrate on something and this will surel help kids to concentrate on other boring stuff later in their life.
+		</p>
+	</article>
+		
+	<section id="content"> 
+	<h1>About LOGO</h1>
+	 <p><img src="../images/logo.png" alt="a logo">Our logo is a four-leaf-clover. It has been regarded as lucky symbol in many countries. Generally there are a lot of three-leaf clovers, but it is really
+	 hard to find a four-leaf clover. Therefore it became the symbol of luck. As you can see above, there are many advantages to play puzzle gaames and the games are free
+	 Therefore, it is same as a huge luck that you find our webpage. Enjoy our webpage and have benefits!</p> 
+	</section> 
+	
+	<aside id="extra"> 
+	<h1>SATISFICATION</h1> 
+	<p>We questioned people to measure how satisfactory people are with this web page.
+		The result was average 9 out of 10. Do not miss this free chance!</p>
+	</aside>
+	
+	<footer> 
+		<p>&copy; Copyright 2016 H HAN</p>
+	</footer>
+	</main>
+	
+</body>
+</html>

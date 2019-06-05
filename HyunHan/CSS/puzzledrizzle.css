@@ -1,0 +1,646 @@
+/*All the elements related to the size category is tried to be used with % or related to the proportion figure to be flexible in the change of size except some few special case.*/
+/*Responsive web design is applied*/
+/*This part is to give some gradation effect to the contents before main parts of the webpage. Different rules are applied to supply different version of webrowsers*/
+#upper {
+	padding: 0.1% 0 0.1% 0;
+	background:rgb(153,204,255); /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, rgb(153,204,255) , rgb(102,255,102)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right,(153,204,255), rgb(102,255,102)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, (153,204,255), rgb(102,255,102)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, (153,204,255) , rgb(102,255,102)); /* Standard syntax */
+}
+
+/*Widht is given to size the image properly, and the height is assigned auto to be more flexible.*/
+#upper img {
+	float: right;
+	width: 22%;
+    height: auto;
+}
+
+header h1 {
+	color: #950AB0;
+	font-family: Comic Sans MS, cursive, sans-serif;
+	font-size: 1.2em;
+	line-height: 0.1em;
+	text-align: center;
+	padding-bottom: 1.5%;
+	font-variant:small-caps;
+}
+
+header p {
+	margin-top:3%;
+	padding-left: 8%;
+	color: #4A005C;
+}
+
+/*The max widht of the webpage is set, so the webpage will not be crushed despite the scaling the webpageg up a lot.*/
+body {
+	max-width: 1500px;
+	width: 90%;
+	margin: 0.1% auto;
+	background-image: url(../images/puzzle.jpg);
+}
+
+/*Toggle menus should be provided when the webpage is on smartphone version. In the bigger version of browser, it should display horizontal navigation bar.
+  In this reason, I set media query jsut for toggle menu so that I can build up navigation bar menu differently in the bigger browser version.*/
+@media screen and (max-width: 460px) {
+.sidenav {
+	font-family: Comic Sans MS, cursive, sans-serif;
+    display: none;
+    height: 65%;
+    width: 180px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #66B2FF;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav ul li {
+	display: block;
+}
+
+.sidenav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #003366;
+    display: block;
+    transition: 0.4s;
+	padding-bottom: 10px;
+}
+
+.sidenav ul li a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+	margin: 5px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+	color: #003366;
+	text-decoration: none;
+	transition: 0.4s;
+}
+/*The end of media query for toggle menu*/
+}
+
+main  {
+	background-image: url(../images/back.gif);
+	padding: 0.2em 5% 0.2em 5%;
+}
+
+main h2 {
+	color: rgb(0,102,204);
+	font-family: Papyrus, serif;
+	font-size: 0.9em;
+	text-align: center;
+	padding: 3% 0 3% 0;
+	letter-spacing: 4px;
+}
+
+aside {
+	width: 50%;
+	float: right;
+}
+
+/*To apply different css rules among different html files, different id was used. #home is for main hompage*/
+#home h3{
+	color: rgb(255,102,178);
+	font-size: 1em;
+	font-family:Impact;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+#home article {
+	margin-bottom: 10%;
+	border-left: 1.5%;
+	padding-left: 5%;
+	border: 3px dashed rgb(0,76,153);
+	font-family: Arial, sans-serif;
+	font-size: 0.9em;
+	width: 90%;
+	border-radius: 30px;
+	box-shadow: 13px 13px 2px rgb(50,153,255);
+}
+	
+#home img {
+	width: 30%;
+	height: auto;
+	float: right;
+	margin: 0.5em 0 0.5em 4%;
+}
+
+#home #content {
+	font-size: 1em;
+	font-family:Courier New;
+}
+
+#home #extra {
+	font-size:1em;
+	font-family:Courier New;
+}
+
+/*id founder is css rules for explaining founders*/
+#founders article {
+	margin-bottom: 13%;
+	padding: 0 1% 2% 0;
+	font-size: 1em;
+	font-style: italic;
+	font-family: Arial, sans-serif;
+	width: 90%;
+	box-shadow: 7px 7px 2px rgb(204,153,255);
+}
+
+#founders img {
+	padding-right: 2%;
+	width: 14%;
+	float: left;
+}
+
+/*This is not specified into specific html, because I wantedt to share this property in the same div element called content*/
+#content {
+	width: 40%;
+	float: left;
+}
+
+#content img {
+	float: right;
+	width: 30%;
+	max-width: 100%;
+}
+
+#news #content {
+	width: 47%;
+	float: left;
+	font-size: 1em;
+	font-family: Comic Sans MS, cursive, sans-serif;
+	line-height: 30px;
+}
+
+#news #details {
+	width: 50%;
+	float: left;
+	font-size: 0.9em;
+	font-family: Comic Sans MS, cursive, sans-serif;
+	line-height: 30px;
+	
+}
+
+#news h1{
+	color: rgb(255,102,178);
+	font-size: 1em;
+	font-family:Impact;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+#news h4 {
+	color: rgb(255,0,255);
+	font-size: 1em;
+	font-family:Impact;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+/*Just for this image, I want to float this image to the left. Therefore I have used seperate class*/
+#news .imgleft {
+	padding:3% 3% 0 0;
+	float: left;
+}
+
+#news img {
+	float: right;
+	width: 40%;
+	height: auto;
+}	
+
+#news a {
+	color: #FF3333;
+}
+
+#news #extra {
+	font-size: 1em;
+	font-family: Comic Sans MS, cursive, sans-serif;
+	width: 48%;
+	float: right;
+	line-height: 30px;
+}
+
+/*When the browser size is going down, the submit and resset button is also scaled down. However the letter in the button cannot be shown fully. 
+   Therefore, I have fixed the font size to show the full letter in the button*/
+#extra #fix {
+	font-size: 15px;
+	width: 400px;
+}
+
+#extra form {
+	border-radius: 30px;
+}
+
+/*In the narrowest browser, the long word is not shown and goes outside of the browser. So break the letter to be shown in the next line.*/
+#extra h1 {
+	word-break: break-all;
+}
+
+#access h3 {
+	font-size: 1.2em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#access p {
+	font-size: 1em;
+	font-family: Times New Roman, Times, serif
+}
+
+/*This is for decortaion for puzzle game section*/
+#game article a:link {
+	text-decoration: none;
+	font-family: Times New Roman, Times, serif;
+	font-size: 0.8em;
+	color: blue;
+	font-style: italic;
+}
+
+#game article a:visited {
+	color: hotpink;
+}
+
+#game article a:hover {
+	transition: 0.3s;
+	font-size: 0.9em;
+}
+
+#game p {
+	font-size: 0.9em;
+	font-family: Times New Roman, Times, serif;
+	color: gray;
+}
+
+#spot {
+	padding-top: 3%;
+}
+
+#spot p {
+	font-size: 0.9em;
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	color: #006666;
+}
+
+input[type=email] {
+    width: 60%;
+    padding: 3%;
+    box-sizing: border-box;
+	border: 4px dotted #99CCFF;
+	border-radius: 15px;
+	background-color: #FFF8DC;
+}
+
+input[type=submit], input[type=reset] {
+	width: 13%;
+	margin: 1.5%;
+    box-sizing: border-box;
+	background-color: #FFF8DC;
+	border: 2px dotted #99CCFF;
+	border-radius: 15px;
+	font-size: 0.7em;
+	font-family: Comic Sans MS, cursive, sans-serif;
+}
+
+textarea[name=comments] {
+	width: 80%;
+	padding: 3%;
+    box-sizing: border-box;
+	border-radius: 15px;
+	border: 4px dotted #99CCFF;
+	background-color: #FFF8DC;
+}
+
+button {
+	width: 100px;
+	margin-bottom: 3%;
+    box-sizing: border-box;
+	background-color: #FFF8DC;
+	border: 3px dotted #99CCFF;
+	border-radius: 15px;
+	font-size: 0.7em;
+	font-family: Comic Sans MS, cursive, sans-serif;
+}
+
+footer {
+	clear: both;
+	font-size: 0.6em;
+	text-align: center;
+	border-top: 4px solid gray;
+	padding: 3px 5%;
+}
+
+/*This part is for middle size of screen*/
+/* The big change from the previous version is navigation part. In the other parts, most change is focused on the change of the size*/
+@media screen and (min-width: 460px) {
+#upper img {	
+	float: left;
+	width: 14%;
+	margin: 0;	
+}
+
+header h1 {
+	padding-bottom: 7%;
+	font-size: 2.5em;
+}
+
+/*Toggle button is no long needed.*/
+header p {
+	display: none;
+}
+
+/*I applied totally different css rule with previous toggle navigation bar to display horizontal navigation menu.*/
+.sidenav ul {
+  clear: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #66B2FF;
+}
+
+.sidenav ul li {
+	float: left;
+}
+
+.sidenav ul li a {
+  font-family: Comic Sans MS, cursive, sans-serif;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 3% 10%;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 0.9em;
+}
+
+.sidenav ul li a:hover, .offcanvas a:focus{
+   color: #AAF3F3;
+   margin: 1%;
+}
+
+/*close button is also not required*/
+.sidenav .closebtn {
+   display: none;
+}
+
+/*By sizing up, I am able to give more room between letters.*/
+main h2 {
+	font-size: 1.3em;
+	letter-spacing: 6px;
+}
+
+#home h3{
+	font-size: 1.2em;
+}
+
+#home article {
+	font-size: 1.1em;
+}
+
+#home #content {
+	font-size: 1.1em;
+}
+
+#home #extra {
+	font-size:1.1em;
+}
+
+#founders article {
+	padding: 0 1% 2% 4%;
+	font-size: 1.1em;
+}
+
+#founders img {
+	margin-right: 2%;	
+}
+
+/*Most of the imagees is being give max-width. Therefore the image will not be bigger than it's original size.*/
+#content {
+	max-width: 100%;	
+}
+
+#content img {	
+	max-width: 100%;
+}
+
+#news #content {
+	font-size: 1.2em;
+}
+
+#news #details {
+	width: 48%;
+	font-size: 1.1em;
+}
+
+#news h1{
+	font-size: 1.3em;
+}
+
+#news h4 {
+	font-size: 1.3em;
+}
+
+#news .imgleft {
+	max-width: 100%;
+}
+
+#news img {
+	max-width: 100%;
+}	
+
+#news #extra {
+	font-size: 1.2em;
+	width: 48%;
+}
+
+#extra #fix {
+	font-size: 1em;
+	width: 500px;
+}
+
+#access h3 {
+	font-size: 1.3em;
+}
+
+#access p {
+	font-size: 1.2em;
+}
+
+#game article a:link {
+	font-size: 1em;
+}
+
+#game article a:hover {
+	transition: 0.3s;
+	font-size: 1.2em;
+}
+
+#game p {
+	font-size: 1.1em;
+}
+
+#spot p {
+	font-size: 1.2em;
+}
+
+
+input[type=email] {
+    width: 60%;
+	border: 6px dotted #99CCFF;
+}
+
+input[type=submit], input[type=reset] {
+	max-width: 100%;
+	font-size: 0.8em;
+}
+
+textarea[name=comments] {
+	max-width: 100%;
+	border: 6px dotted #99CCFF;
+}
+
+footer {
+	font-size: 0.7em;
+}
+/*This is end of the middle screen version*/
+}  
+
+/*The change is mainly focused on the change of font-size and padding to coordinate with bigger size of the window.*/
+@media screen and (min-width: 800px) {
+#upper img {	
+	width: 14%;
+	margin-right: 2%;
+	max-width: 100%
+}
+
+header h1 {
+	text-align: left;
+	padding-bottom: 6%;
+	font-size: 4.6em;
+}
+
+.sidenav ul li a {
+  padding-right: 28%;
+  font-size: 1.1em;
+}
+
+main h2 {
+	font-size: 3em;
+	font-family:Lucida Console;
+	letter-spacing: 7px;
+}
+
+#home h3{
+	font-size: 1.4em;
+}
+
+#home article {
+	font-size: 1.2em;
+}
+
+#home img {
+	width: 20%;
+	max-width: 100%;
+	margin: 0.5em 0 0.5em 5%;
+}
+
+#home #content {
+	font-size: 1.2em;
+}
+
+#home #extra {
+	font-size:1.2em;
+}
+
+#founders article {
+	font-size: 1.2em;
+}
+
+#founders img {
+	margin-right: 3%;	
+}
+
+#news #content {
+	font-size: 1.4em;
+}
+
+#news #details {
+	font-size: 1.2em;
+}
+
+#news h1{
+	font-size: 1.5em;
+}
+
+#news h4 {
+	font-size: 1.5em;
+}
+
+#news #extra {
+	font-size: 1.4em;
+}
+
+#extra #fix {
+	font-size: 1.2em;
+	width: 800px;
+}
+
+#access h3 {
+	font-size: 1.4em;
+}
+
+#access p {
+	font-size: 1.3em;
+}
+
+#game article a:link {
+	font-size: 1.1em;
+}
+
+#game article a:hover {
+	transition: 0.3s;
+	font-size: 1.3em;
+}
+
+#game p {
+	font-size: 1.2em;
+}
+
+#spot p {
+	font-size: 1.5em;
+}
+
+
+input[type=email] {
+	max-width: 100%;
+}
+
+input[type=submit], input[type=reset] {
+	max-width: 100%;
+}
+
+textarea[name=comments] {
+	max-width: 100%;
+}
+
+footer {
+	font-size: 0.8em;
+}
+/* This is the end of the desktop version*/
+}
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lnag="en">
+
+<!--This is code is made by Hyun HAN
+	It is same with main homepage before the mian contents-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PuzzleDrizzle</title>
+	<link rel="stylesheet" href="../CSS/puzzledrizzle.css">
+</head>
+
+<body>
+	<div id="upper">
+	<figure>
+		<img src="../images/logo.png" alt="a logo">
+	</figure>
+	<header>
+		<h1>PuzZle driZzle</h1>
+		<p><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></p>
+	</header>
+	<nav>
+	 <div id="mySidenav" class="sidenav">
+		<ul>
+		  <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+		  <li><a href="../HTML/index.html">Home</a></li>
+		  <li><a href="../HTML/aboutus.html">About</a></li>
+		  <li><a href="../HTML/news.html">News</a></li>
+		  <li><a href="../HTML/recommendation.html">Reviews</a></li>
+		  <li><a href="../HTML/puzzleGames.html">Puzzle</a></li>
+		  <li><a href="../HTML/contact.html">Contact</a></li>
+		  <li><a href="../HTML/accessibility.html">Accessibility</a></li>
+		</ul>
+	 </div>
+	</nav>
+	<script src="../javascript/navScript.js"></script>
+	</div>
+	
+	<!--I used same id for main part with news page because I wanted similar structures.-->
+	<main id="news">
+	<h2>CONTACT DETAILS</h2>
+	<section id="details"> 
+	 <p>Representitive Director: HYUN HAN</p> 
+	 <p>Email: hello@gmail.com</p> 
+	 <p>Adress: 215 Sharrow Vale Rd, Sheffield, S11 8ZB </p> 
+	 <p>Number: 07460693504</p> 
+	</section> 
+	
+	<aside id="extra"> 
+	 <form name="myform" action="http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl" method="get">
+	 <input type="hidden" name="recipient" value="hhan5@sheffield.ac.uk">
+     <p>
+       <label for="email">Your Detail:</label>
+       <input type="email" name="email" placeholder="type your email..."
+             maxlength="50" size="20" required>
+     </p>
+	 <textarea name="comments" rows="6" cols="50" placeholder="Add your comments here..."></textarea>
+     <br>
+	 <div id="fix">
+	  <p>
+		 <input type="submit" name="submit" value="Submit">
+		 <input type="reset" name="reset" value="Reset">
+	  </p>
+	 </div>
+	 </form> 
+	</aside>
+	
+	<footer> 
+		<p>&copy; Copyright 2016 H HAN</p>
+	</footer>
+	</main>
+	
+</body>
+
+</html>

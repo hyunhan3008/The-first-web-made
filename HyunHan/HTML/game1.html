@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lnag="en">
+
+<!--This is code is made by Hyun HAN
+	It is same with main homepage before the mian contents-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name ="author" content="Hyun HAN">
+	<title>PuzzleDrizzl</title>
+	<link rel="stylesheet" href="../CSS/puzzledrizzle.css">
+</head>
+
+<body>
+	<div id="upper">
+	<figure>
+		<img src="../images/logo.png" alt="a logo">
+	</figure>
+	<header>
+		<h1>PuzZle driZzle</h1>
+		<p><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></p>
+	</header>
+	<nav>
+	 <div id="mySidenav" class="sidenav">
+		<ul>
+		  <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+		  <li><a href="../HTML/index.html">Home</a></li>
+		  <li><a href="../HTML/aboutus.html">About</a></li>
+		  <li><a href="../HTML/news.html">News</a></li>
+		  <li><a href="../HTML/recommendation.html">Reviews</a></li>
+		  <li><a href="../HTML/puzzleGames.html">Puzzle</a></li>
+		  <li><a href="../HTML/contact.html">Contact</a></li>
+		  <li><a href="../HTML/accessibility.html">Accessibility</a></li>
+		</ul>
+	 </div>
+	</nav>
+	<script src="../javascript/navScript.js"></script>
+	</div>
+
+	<main>
+	<div id="spot">
+	<canvas id="canvas_board" width="300" height="500"></canvas>
+	 <p>Use bottom images to spot the differences!!!!</p>
+	 <button name="Next" id="next1" class="next">NEXT</button>
+	</div>
+    <script src="../javascript/gameScript.js"></script>
+	</main>
+	
+	<footer> 
+		<p>&copy; Copyright 2016 H HAN</p>
+	</footer>
+	
+</body>
+</html>
